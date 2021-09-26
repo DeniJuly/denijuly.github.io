@@ -6,22 +6,124 @@
 		height: 55px;
 	}
 	.content {
-		flex-direction: row;
-	}
-	.cooming-soon h1 {
-		text-align: left;
-	}
-	.cooming-soon h6 {
-		text-align: left;
+		margin-top: 81px;
 	}
 	.container-text {
 		margin-top: 0px;
 		margin-left: 20px;
 	}
+	.m-section {
+		margin-top: 100px;
+	}
+	.container-sch {
+		flex-direction: row;
+	}
+	.item-experience .content-exp {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.item-experience .date {
+		font-size: 14px;
+	}
+	.item-experience .place {
+		font-size: 20px;
+	}
+	.item-experience .role {
+		font-size: 16px;
+	}
 }
 @media screen and (min-width: 992px) {
+	.content {
+		padding-top: 50px;
+	}
+	.content .banner {
+		padding: 40px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.content .banner .content-banner {
+		max-width: 500px;
+	}
+	.content .banner .content-banner h6 {
+		font-size: 16px;
+		text-align: left;
+	}
+	.content .banner .content-banner h1 {
+		font-size: 30px;
+		text-align: left;
+	}
+	.content .banner .content-banner p {
+		font-size: 14px;
+		text-align: left;
+	}
+	.content .banner .container-btn {
+		justify-content: flex-start;
+	}
+	.content .banner .btn-contact {
+		font-size: 16px;
+	}
+	.content .banner .btn-cv {
+		font-size: 16px;
+	}
+	.content .banner img {
+		width: 270px;
+		height: 270px;
+		border: 20px solid #ffffff;
+		border-radius: 270px;
+		right: 40px;
+		top: auto;
+	}
+	.container-about {
+		flex-direction: row;
+	}
+	.container-about img {
+		width: 450px;
+		height: 450px;
+	}
+	.item-skill .container-content {
+		display: block;
+	}
+	.item-skill {
+		justify-content: space-between;
+	}
 }
 @media screen and (min-width: 1200px) {
+	.content .banner {
+		background-color: var(--light-primary);
+		padding: 40px;
+		border-radius: 10px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.content .banner .content-banner h6 {
+		font-size: 16px;
+	}
+	.content .banner .content-banner h1 {
+		font-size: 40px;
+	}
+	.content .banner .content-banner p {
+		font-size: 14px;
+	}
+	.content .banner .content-banner {
+		max-width: 600px;
+	}
+	.content .banner img {
+		width: 350px;
+		height: 350px;
+		border: 20px solid #ffffff;
+		border-radius: 200px;
+		right: 40px;
+	}
 }
 @media screen and (min-width: 1400px) {
+	.content .banner .content-banner {
+		max-width: 800px;
+	}
+	.content .banner img {
+		width: 300px;
+		height: 300px;
+		border: 20px solid #ffffff;
+		border-radius: 200px;
+		right: 40px;
+	}
 }
