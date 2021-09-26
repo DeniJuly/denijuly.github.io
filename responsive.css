@@ -1,0 +1,27 @@
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+	.navbar-brand img {
+		width: 55px;
+		height: 55px;
+	}
+	.content {
+		flex-direction: row;
+	}
+	.cooming-soon h1 {
+		text-align: left;
+	}
+	.cooming-soon h6 {
+		text-align: left;
+	}
+	.container-text {
+		margin-top: 0px;
+		margin-left: 20px;
+	}
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+}

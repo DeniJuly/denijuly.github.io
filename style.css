@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+:root {
+	--primary: #0779e4;
+	--secondary: #fcbf1e;
+	--dark: #333333;
+	--black: #333333;
+	--grey: #dbdbdb;
+	--grey2: #eeeeee;
+	--grey3: #f4f4f4;
+	--light-primary: #edf6ff;
+	--light-secoundary: #fff6de;
+}
+
+* {
+	font-family: "Quicksand", sans-serif;
+}
+
+body {
+	height: 100vh;
+}
+
+/* Header */
+.m-navbar .navbar-social {
+	flex-direction: row;
+}
+.navbar-brand img {
+	width: 35px;
+	height: 35px;
+}
+.navbar-social .nav-item {
+	margin-left: 10px;
+}
+.navbar-social .nav-item .nav-link {
+	width: 35px;
+	height: 35px;
+	display: block;
+	border-radius: 35px;
+	transition: 0.3s;
+}
+.navbar-social .nav-item .nav-link:hover {
+	background-color: var(--light-primary);
+}
+.navbar-social .nav-item .nav-link svg path {
+	fill: var(--black);
+	transition: 0.3s;
+}
+.navbar-social .nav-item .nav-link:hover svg path {
+	fill: var(--primary);
+}
+
+/* Content */
+.cooming-soon {
+	flex-direction: column;
+}
+.cooming-soon img {
+	width: 200px;
+	height: 200px;
+}
+.container-text {
+	margin-top: 30px;
+}
+.cooming-soon h1 {
+	font-size: 30px;
+	color: var(--black);
+	text-align: center;
+}
+.cooming-soon h6 {
+	font-size: 20px;
+	color: var(--primary);
+	font-weight: 500;
+	text-align: center;
+}
