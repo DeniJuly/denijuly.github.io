@@ -315,8 +315,22 @@
 	margin-bottom: 20px;
 }
 
-.item-projek img {
+.item-projek .container-img {
 	border-radius: 8px;
+	transition: 0.3s;
+	overflow: hidden;
+	aspect-ratio: 255/210;
+}
+
+.item-projek .container-img img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+
+.item-projek .container-img:hover img {
+	transform: scale(1.2) rotate(10deg);
 }
 
 .item-projek .title {
@@ -377,7 +391,7 @@ footer .social-media a {
 	background-color: #ffffff;
 	padding: 15px;
 	bottom: 20px;
-	right: -320px;
+	right: -280px;
 	z-index: 100;
 	transition: 0.3s;
 }
@@ -396,5 +410,8 @@ footer .social-media a {
 	transform: rotate(180deg);
 }
 .navbar-menu-mobile .nav-item .nav-link {
-	font-size: 12px;
+	font-size: 10px;
+}
+.navbar-menu-mobile .nav-link.active::before {
+	content: none;
 }

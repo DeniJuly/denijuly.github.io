@@ -16,52 +16,93 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<div class="d-block d-lg-none position-fixed container-nav-mob d-flex align-items-center" id="nav-mobile">
-			<button class="btn btn-sm" onclick="handleNavMob(event)">
-				<img src="assets/icons/ic_arrow.svg" alt="ic arrow" />
-			</button>
-			<ul class="navbar-nav navbar-menu d-flex flex-row align-items-center navbar-menu-mobile">
-				<li class="nav-item px-2">
-					<a
-						onclick="goScroll(event, 'about')"
-						class="nav-link position-relative d-flex align-items-center justify-content-center about nav-link-menu"
-						href="#"
-						>About me</a
-					>
-				</li>
-				<li class="nav-item px-2">
-					<a
-						onclick="goScroll(event, 'school')"
-						class="nav-link position-relative d-flex align-items-center justify-content-center school nav-link-menu"
-						href="#"
-						>School</a
-					>
-				</li>
-				<li class="nav-item px-2">
-					<a
-						onclick="goScroll(event, 'experience')"
-						class="nav-link position-relative d-flex align-items-center justify-content-center experience nav-link-menu"
-						href="#"
-						>Experience</a
-					>
-				</li>
-				<li class="nav-item px-2">
-					<a
-						onclick="goScroll(event, 'skill')"
-						class="nav-link position-relative d-flex align-items-center justify-content-center skill nav-link-menu"
-						href="#"
-						>Skill</a
-					>
-				</li>
-				<li class="nav-item px-2">
-					<a
-						onclick="goScroll(event, 'project')"
-						class="nav-link position-relative d-flex align-items-center justify-content-center project nav-link-menu"
-						href="#"
-						>Project</a
-					>
-				</li>
-			</ul>
+		<div class="d-block d-lg-none position-fixed container-nav-mob" id="nav-mobile">
+			<div class="d-flex align-items-center">
+				<button class="btn btn-sm" onclick="handleNavMob(event)">
+					<img src="assets/icons/ic_arrow.svg" alt="ic arrow" />
+				</button>
+				<ul class="navbar-nav navbar-menu d-flex flex-row align-items-center navbar-menu-mobile">
+					<li class="nav-item px-2">
+						<a
+							onclick="goScroll(event, 'about')"
+							class="nav-link position-relative d-flex flex-column align-items-center justify-content-center about nav-link-menu"
+							href="#"
+						>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 5.9C13.16 5.9 14.1 6.84 14.1 8C14.1 9.16 13.16 10.1 12 10.1C10.84 10.1 9.9 9.16 9.9 8C9.9 6.84 10.84 5.9 12 5.9ZM12 14.9C14.97 14.9 18.1 16.36 18.1 17V18.1H5.9V17C5.9 16.36 9.03 14.9 12 14.9ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 13C9.33 13 4 14.34 4 17V19C4 19.55 4.45 20 5 20H19C19.55 20 20 19.55 20 19V17C20 14.34 14.67 13 12 13Z"
+									fill="#333333"
+								/>
+							</svg>
+							About me</a
+						>
+					</li>
+					<li class="nav-item px-2">
+						<a
+							onclick="goScroll(event, 'school')"
+							class="nav-link position-relative d-flex flex-column align-items-center justify-content-center school nav-link-menu"
+							href="#"
+						>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z"
+									fill="#333333"
+								/>
+							</svg>
+
+							School</a
+						>
+					</li>
+					<li class="nav-item px-2">
+						<a
+							onclick="goScroll(event, 'experience')"
+							class="nav-link position-relative d-flex flex-column align-items-center justify-content-center experience nav-link-menu"
+							href="#"
+						>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M20 7H16V5L14 3H10L8 5V7H4C2.9 7 2 7.9 2 9V14C2 14.75 2.4 15.38 3 15.73V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15.72C21.59 15.37 22 14.73 22 14V9C22 7.9 21.1 7 20 7ZM10 5H14V7H10V5ZM4 9H20V14H15V11H9V14H4V9ZM13 15H11V13H13V15ZM19 19H5V16H9V17H15V16H19V19Z"
+									fill="#333333"
+								/>
+							</svg>
+
+							Experience</a
+						>
+					</li>
+					<li class="nav-item px-2">
+						<a
+							onclick="goScroll(event, 'skill')"
+							class="nav-link position-relative d-flex flex-column align-items-center justify-content-center skill nav-link-menu"
+							href="#"
+						>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22 6.99993H13V8.99993H22V6.99993ZM22 14.9999H13V16.9999H22V14.9999ZM5.54 10.9999L2 7.45993L3.41 6.04993L5.53 8.16993L9.77 3.92993L11.18 5.33993L5.54 10.9999ZM5.54 18.9999L2 15.4599L3.41 14.0499L5.53 16.1699L9.77 11.9299L11.18 13.3399L5.54 18.9999Z"
+									fill="#333333"
+								/>
+							</svg>
+
+							Skill</a
+						>
+					</li>
+					<li class="nav-item px-2">
+						<a
+							onclick="goScroll(event, 'project')"
+							class="nav-link position-relative d-flex flex-column align-items-center justify-content-center project nav-link-menu"
+							href="#"
+						>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3 5V19H21V5H3ZM7 7V9H5V7H7ZM5 13V11H7V13H5ZM5 15H7V17H5V15ZM19 17H9V15H19V17ZM19 13H9V11H19V13ZM19 9H9V7H19V9Z"
+									fill="#333333"
+								/>
+							</svg>
+
+							Project</a
+						>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg fixed-top m-navbar bg-white">
 			<div class="container">
@@ -494,7 +535,9 @@
 				<div class="row mt-30">
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="card item-projek">
-							<img src="assets/images/il_cake.png" alt="Cake" />
+							<div class="container-img">
+								<img src="assets/images/il_cake.png" alt="Cake" />
+							</div>
 							<p class="title mb-0 fw-bold mt-20">Cakeee</p>
 							<p class="desc">Cakeee is an application for buying cakes with various variants, flavors, and unique designs</p>
 							<p class="year mb-0 mt-20">2021</p>
@@ -502,7 +545,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="card item-projek">
-							<img src="assets/images/il_ramadhanku.png" alt="Cake" />
+							<div class="container-img">
+								<img src="assets/images/il_ramadhanku.png" alt="Cake" />
+							</div>
 							<p class="title mb-0 fw-bold mt-20">Ramadhanku</p>
 							<p class="desc">
 								Ramadhanku is an application that aims to help For people to be more active in worship, Ramadhanku offers a variety
@@ -513,7 +558,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="card item-projek">
-							<img src="assets/images/il_uangsaku.png" alt="Cake" />
+							<div class="container-img">
+								<img src="assets/images/il_uangsaku.png" alt="Cake" />
+							</div>
 							<p class="title mb-0 fw-bold mt-20">Uangsaku</p>
 							<p class="desc">
 								An application that aims to help students in managing money that can be monitored independently, students will be
@@ -524,7 +571,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 						<div class="card item-projek">
-							<img src="assets/images/il_film.png" alt="Cake" />
+							<div class="container-img">
+								<img src="assets/images/il_film.png" alt="Cake" />
+							</div>
 							<p class="title mb-0 fw-bold mt-20">Film</p>
 							<p class="desc">
 								Film is an application for viewing the latest, favorite, and most popular films which are packaged in a simple and
