@@ -319,7 +319,7 @@
 	border-radius: 8px;
 	transition: 0.3s;
 	overflow: hidden;
-	aspect-ratio: 255/210;
+	aspect-ratio: 6/5;
 }
 
 .item-projek .container-img img {
