@@ -16,10 +16,59 @@
 	</head>
 	<body>
 		<!-- Header -->
+		<div class="d-block d-lg-none position-fixed container-nav-mob d-flex align-items-center" id="nav-mobile">
+			<button class="btn btn-sm" onclick="handleNavMob(event)">
+				<img src="assets/icons/ic_arrow.svg" alt="ic arrow" />
+			</button>
+			<ul class="navbar-nav navbar-menu d-flex flex-row align-items-center navbar-menu-mobile">
+				<li class="nav-item px-2">
+					<a
+						onclick="goScroll(event, 'about')"
+						class="nav-link position-relative d-flex align-items-center justify-content-center about nav-link-menu"
+						href="#"
+						>About me</a
+					>
+				</li>
+				<li class="nav-item px-2">
+					<a
+						onclick="goScroll(event, 'school')"
+						class="nav-link position-relative d-flex align-items-center justify-content-center school nav-link-menu"
+						href="#"
+						>School</a
+					>
+				</li>
+				<li class="nav-item px-2">
+					<a
+						onclick="goScroll(event, 'experience')"
+						class="nav-link position-relative d-flex align-items-center justify-content-center experience nav-link-menu"
+						href="#"
+						>Experience</a
+					>
+				</li>
+				<li class="nav-item px-2">
+					<a
+						onclick="goScroll(event, 'skill')"
+						class="nav-link position-relative d-flex align-items-center justify-content-center skill nav-link-menu"
+						href="#"
+						>Skill</a
+					>
+				</li>
+				<li class="nav-item px-2">
+					<a
+						onclick="goScroll(event, 'project')"
+						class="nav-link position-relative d-flex align-items-center justify-content-center project nav-link-menu"
+						href="#"
+						>Project</a
+					>
+				</li>
+			</ul>
+		</div>
 		<nav class="navbar navbar-expand-lg fixed-top m-navbar bg-white">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="assets/logos/logo.svg" alt="logo deni juli setiawan" />
+					<button class="btn">
+						<img src="assets/logos/logo.svg" alt="logo deni juli setiawan" />
+					</button>
 				</a>
 				<div class="d-none d-lg-block d-xl-block d-xxl-block">
 					<ul class="navbar-nav navbar-menu">
@@ -493,7 +542,7 @@
 		<footer class="m-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb-20">
 						<div class="d-flex align-items-center">
 							<img src="assets/logos/logo.svg" alt="Deni Juli Setiawan" />
 							<div class="ms-3">
@@ -502,12 +551,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-20">
 						<p class="fw-bold m-0 title-footer">Contact Me</p>
 						<p class="item-footer mb-0"><strong>email: </strong>: denijuli.setiawan@gmail.com</p>
 						<p class="item-footer mb-0"><strong>Phone: </strong>: 085156636926</p>
 					</div>
-					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 mb-20">
 						<p class="fw-bold m-0 title-footer">Menu</p>
 						<a href="#" onclick="goScroll(event, 'about')" class="item-footer w-100 d-block">About Me</a>
 						<a href="#" onclick="goScroll(event, 'school')" class="item-footer w-100 d-block">Scholl</a>
@@ -515,7 +564,7 @@
 						<a href="#" onclick="goScroll(event, 'skill')" class="item-footer w-100 d-block">Skill</a>
 						<a href="#" onclick="goScroll(event, 'project')" class="item-footer w-100 d-block">Project</a>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-20">
 						<p class="fw-bold mb-2 title-footer">Social Media</p>
 						<div class="d-flex align-items-center justify-content-between social-media">
 							<a target="_blank" href="https://www.instagram.com/deni_jsa/" class="d-flex align-items-center justify-content-center">
@@ -578,7 +627,9 @@
 						</div>
 					</div>
 					<div class="col-12 d-flex align-items-center justify-content-center mt-30">
-						<p class="title-footer fw-bold m-0">Made With By <span class="text-primary">Deni Juli Setiawan</span></p>
+						<p class="title-footer fw-bold m-0">
+							Made With <span class="text-primary">&hearts;</span> By <span class="text-primary">Deni Juli Setiawan</span>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -608,6 +659,8 @@
 				let headerOffset = 81;
 				let elementPosition = element.offsetTop;
 				let offsetPosition = elementPosition - headerOffset;
+
+				handleNavMob();
 
 				window.scrollTo({
 					top: offsetPosition,
@@ -647,6 +700,11 @@
 					});
 				}
 			});
+			function handleNavMob(e) {
+				e?.preventDefault();
+				let elem = document.getElementById("nav-mobile");
+				elem.classList.toggle("open");
+			}
 		</script>
 	</body>
 </html>
