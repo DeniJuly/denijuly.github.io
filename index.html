@@ -701,9 +701,16 @@
 				prevElem.forEach((el) => {
 					el.classList.remove("active");
 				});
+				let icPrevElem = document.querySelectorAll(".nav-link-menu path");
+				icPrevElem.forEach((el) => {
+					el.setAttribute("fill", "#333333");
+				});
 
 				let navElement = document.querySelector(`.${tag}.nav-link`);
 				navElement.classList.add("active");
+
+				let iconElement = document.querySelector(`.${tag}.nav-link path`);
+				iconElement.setAttribute("fill", "#0779E4");
 
 				let headerOffset = 81;
 				let elementPosition = element.offsetTop;
@@ -724,25 +731,44 @@
 				let skill = document.getElementById("skill").offsetTop - 81;
 				let project = document.getElementById("project").offsetTop - 81;
 				let prevElem = document.querySelectorAll(".nav-link-menu");
+				let icPrevElem = document.querySelectorAll(".nav-link-menu path");
 				prevElem.forEach((el) => {
 					el.classList.remove("active");
+				});
+				icPrevElem.forEach((el) => {
+					el.setAttribute("fill", "#333333");
 				});
 
 				if (scrollpos >= about && scrollpos < school) {
 					let menu = document.querySelector(".about.nav-link");
 					menu.classList.add("active");
+
+					let iconElement = document.querySelector(`.about.nav-link path`);
+					iconElement.setAttribute("fill", "#0779E4");
 				} else if (scrollpos >= school && scrollpos < experience) {
 					let menu = document.querySelector(".school.nav-link");
 					menu.classList.add("active");
+
+					let iconElement = document.querySelector(`.school.nav-link path`);
+					iconElement.setAttribute("fill", "#0779E4");
 				} else if (scrollpos >= experience && scrollpos < skill) {
 					let menu = document.querySelector(".experience.nav-link");
 					menu.classList.add("active");
+
+					let iconElement = document.querySelector(`.experience.nav-link path`);
+					iconElement.setAttribute("fill", "#0779E4");
 				} else if (scrollpos >= skill && scrollpos < project) {
 					let menu = document.querySelector(".skill.nav-link");
 					menu.classList.add("active");
+
+					let iconElement = document.querySelector(`.skill.nav-link path`);
+					iconElement.setAttribute("fill", "#0779E4");
 				} else if (scrollpos >= project) {
 					let menu = document.querySelector(".project.nav-link");
 					menu.classList.add("active");
+
+					let iconElement = document.querySelector(`.project.nav-link path`);
+					iconElement.setAttribute("fill", "#0779E4");
 				} else {
 					prevElem.forEach((el) => {
 						el.classList.remove("active");
