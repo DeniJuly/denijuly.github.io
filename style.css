@@ -50,6 +50,9 @@
 	max-width: 600px;
 	margin-top: 10px;
 }
+.w-95 {
+	width: 95%;
+}
 .w-90 {
 	width: 90%;
 }
@@ -125,7 +128,7 @@
 }
 .content .banner {
 	background-color: var(--light-primary);
-	padding: 125px 40px 40px 40px;
+	padding: 125px 30px 40px 30px;
 	border-radius: 10px;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -313,6 +316,7 @@
 	padding: 20px;
 	border: none;
 	margin-bottom: 20px;
+	height: 100%;
 }
 
 .item-projek .container-img {
