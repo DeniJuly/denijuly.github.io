@@ -26,7 +26,7 @@
 		<!-- Nav Mobile -->
 		<div class="block lg:hidden fixed bottom-5 z-50 nav-mobile transition" id="nav-mobile">
 			<div class="flex items-center bg-white dark:bg-dark-black-light rounded-l-full p-3 shadow-md">
-				<button onclick="handleNavMob(event)" id="btn-toggle-nav">
+				<button onclick="handleNavMob(event)" id="btn-toggle-nav" aria-label="toggle navigation">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M14.7099 15.88L10.8299 12L14.7099 8.11998C15.0999 7.72998 15.0999 7.09998 14.7099 6.70998C14.3199 6.31998 13.6899 6.31998 13.2999 6.70998L8.70994 11.3C8.31994 11.69 8.31994 12.32 8.70994 12.71L13.2999 17.3C13.6899 17.69 14.3199 17.69 14.7099 17.3C15.0899 16.91 15.0999 16.27 14.7099 15.88Z" class="fill-black dark:fill-white"/>
 					</svg>
@@ -104,7 +104,7 @@
 		<div class="fixed top-0 left-0 z-10 w-full">
 			<div class="container mx-auto flex items-center justify-between py-3 bg-white dark:bg-dark-black">
 				<a href="#">
-					<img src="assets/logos/logo.svg" alt="logo deni juli setiawan" title="logo deni juli setiawan" class="h-12" />
+					<img src="assets/logos/logo.svg" alt="logo deni juli setiawan" title="logo deni juli setiawan" class="h-12" loading="lazy" width="48" height="48"/>
 				</a>
 				<div class="hidden gap-3 md:flex">
 					<a class="navbar about" href="#about">About me</a>
@@ -114,7 +114,7 @@
 					<a class="navbar project" href="#project">Project</a>
 				</div>
 				<div class="flex gap-2">
-					<a target="_blank" class="navbar-social group" href="https://www.instagram.com/deni_jsa/">
+					<a target="_blank" class="navbar-social group" href="https://www.instagram.com/deni_jsa/" aria-label="instagram deni juli setiawan">
 						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								class="icon-social-navbar"
@@ -130,7 +130,7 @@
 							/>
 						</svg>
 					</a>
-					<a target="_blank" class="navbar-social group" href="https://www.facebook.com/people/Deni/100006678049034/">
+					<a target="_blank" class="navbar-social group" href="https://www.facebook.com/people/Deni/100006678049034/" aria-label="facebook deni juli setiawan">
 						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								class="icon-social-navbar"
@@ -138,7 +138,7 @@
 							/>
 						</svg>
 					</a>
-					<a target="_blank" class="navbar-social group" href="https://dribbble.com/DeniJSa">
+					<a target="_blank" class="navbar-social group" href="https://dribbble.com/DeniJSa" aria-label="dribbble deni juli setiawan">
 						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								class="icon-social-navbar"
@@ -147,7 +147,7 @@
 							/>
 						</svg>
 					</a>
-					<a target="_blank" class="navbar-social group" href="https://github.com/DeniJuly">
+					<a target="_blank" class="navbar-social group" href="https://github.com/DeniJuly" aria-label="github deni juli setiawan">
 						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								class="icon-social-navbar"
@@ -155,7 +155,7 @@
 							/>
 						</svg>
 					</a>
-					<a target="_blank" class="navbar-social group" href="https://www.linkedin.com/in/deni-juli-setiawan-6b3088170/">
+					<a target="_blank" class="navbar-social group" href="https://www.linkedin.com/in/deni-juli-setiawan-6b3088170/" aria-label="linkedin deni juli setiawan">
 						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								class="icon-social-navbar"
@@ -163,7 +163,7 @@
 							/>
 						</svg>
 					</a>
-					<button id="btn-theme-mode" class="w-9 h-9 rounded-full bg-white dark:bg-dark-black-light flex items-center justify-center ml-3 hover:bg-light-primary dark:hover:bg-dark-black-light">
+					<button id="btn-theme-mode" class="w-9 h-9 rounded-full bg-white dark:bg-dark-black-light flex items-center justify-center ml-3 hover:bg-light-primary dark:hover:bg-dark-black-light" aria-label="toggle theme">
 						<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" class="fill-black dark:fill-white dark:hidden"><rect fill="none" height="24" width="24"/><path d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z"/></svg>
 						<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" class="fill-black dark:fill-white hidden dark:block"><rect fill="none" height="24" width="24"/><path d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg>
 					</button>
@@ -199,12 +199,13 @@
 					alt="Deni Juli Setiawan"
 					title="Deni Juli Setiawan"
 					class="absolute rounded-full border-[20px] border-white w-64 h-64 -top-40 aspect-square lg:translate-y-1/2 lg:right-5 lg:w-72 lg:h-72 dark:border-dark-black"
+					loading="lazy"
 				/>
 			</div>
 		</div>
 		<div class="container mx-auto flex flex-col mt-28 gap-7 lg:flex-row" id="about">
-			<img src="assets/images/deni_about.webp" alt="Deni Juli Setiawan" title="Deni Juli Setiawan" class="w-full dark:hidden block max-w-md mx-auto" />
-			<img src="assets/images/dark_deni_about.webp" alt="Deni Juli Setiawan" title="Deni Juli Setiawan" class="w-full hidden dark:block max-w-md mx-auto" />
+			<img src="assets/images/deni_about.webp" alt="Deni Juli Setiawan" title="Deni Juli Setiawan" class="w-full dark:hidden block max-w-md mx-auto" loading="lazy" width="433" height="424"/>
+			<img src="assets/images/dark_deni_about.webp" alt="Deni Juli Setiawan" title="Deni Juli Setiawan" class="w-full hidden dark:block max-w-md mx-auto" loading="lazy" width="433" height="424"/>
 			<div class="content-about">
 				<h6 class="font-bold text-black text-xl mb-2 lg:text-2xl dark:text-white">About Me</h6>
 				<p class="text-black mb-2 dark:text-white">
@@ -369,13 +370,13 @@
 			<h5 class="title-section" id="school">School</h5>
 			<div class="flex items-center flex-col gap-3 md:flex-row md:justify-center">
 				<div class="text-center">
-					<img src="assets/logos/smk.webp" alt="SMKN 1 Bawang" title="SMKN 1 Bawang" class="mx-auto w-48" />
+					<img src="assets/logos/smk.webp" alt="SMKN 1 Bawang" title="SMKN 1 Bawang" class="mx-auto w-48" loading="lazy" width="192" height="185" />
 					<h5 class="font-bold my-2 text-xl">SMKN 1 Bawang</h5>
 					<p class="mb-0">Software Engineering</p>
 					<p>Juni 2017 - Mei 2020</p>
 				</div>
 				<div class="text-center">
-					<img src="assets/logos/unindra.webp" alt="Universitas Indraprasta PGRI" title="Universitas Indraprasta PGRI" class="mx-auto w-48" />
+					<img src="assets/logos/unindra.webp" alt="Universitas Indraprasta PGRI" title="Universitas Indraprasta PGRI" class="mx-auto w-48" loading="lazy" width="192" height="192" />
 					<h5 class="font-bold my-2 text-xl max-w-[200px]">Universitas Indraprasta PGRI</h5>
 					<p class="mb-0">Informatics Engineering</p>
 					<p>September 2021 - now</p>
@@ -928,7 +929,7 @@
 				<div class="rounded-md shadow-md p-5 flex flex-col justify-between gap-3 bg-white dark:bg-dark-black-light">
 					<div>
 						<div class="rounded-md overflow-hidden">
-							<img src="assets/images/il_resepku.webp" alt="Resepku" title="Resepku" />
+							<img src="assets/images/il_resepku.webp" alt="Resepku" title="Resepku" loading="lazy" width="227" height="187" />
 						</div>
 						<p class="font-bold mt-3 text-lg">Resepku</p>
 						<p>An app that can help people search for recipes. have many and delicious food recipes.</p>
@@ -960,7 +961,7 @@
 				<div class="rounded-md shadow-md p-5 flex flex-col justify-between gap-3 bg-white dark:bg-dark-black-light">
 					<div>
 						<div class="rounded-md overflow-hidden">
-							<img src="assets/images/il_cake.webp" alt="Cakee" title="Cakee" />
+							<img src="assets/images/il_cake.webp" alt="Cakee" title="Cakee"loading="lazy" width="227" height="187" />
 						</div>
 						<p class="font-bold mt-3 text-lg">Cakee</p>
 						<p>Cakeee is an application for buying cakes with various variants, flavors, and unique designs</p>
@@ -991,7 +992,7 @@
 				<div class="rounded-md shadow-md p-5 flex flex-col justify-between gap-3 bg-white dark:bg-dark-black-light">
 					<div>
 						<div class="rounded-md overflow-hidden">
-							<img src="assets/images/il_film.webp" alt="Film" title="Film"/>
+							<img src="assets/images/il_film.webp" alt="Film" title="Film"loading="lazy" width="227" height="187"/>
 						</div>
 						<p class="font-bold mt-3 text-lg">Film</p>
 						<p>
@@ -1025,7 +1026,7 @@
 				<div class="rounded-md shadow-md p-5 flex flex-col justify-between gap-3 bg-white dark:bg-dark-black-light">
 					<div>
 						<div class="rounded-md overflow-hidden">
-							<img src="assets/images/il_ramadhanku.webp" alt="Ramadhanku" title="Ramadhanku" />
+							<img src="assets/images/il_ramadhanku.webp" alt="Ramadhanku" title="Ramadhanku" loading="lazy" width="227" height="187"/>
 						</div>
 						<p class="font-bold mt-3 text-lg">Ramadhanku</p>
 						<p>
@@ -1067,7 +1068,7 @@
 			<div class="container pt-5 flex flex-col gap-4 lg:flex-row lg:justify-between">
 				<div>
 					<div class="flex tems-center gap-3">
-						<img src="assets/logos/logo.svg" alt="Deni Juli Setiawan" title="Deni Juli Setiawan" />
+						<img src="assets/logos/logo.svg" alt="Deni Juli Setiawan" title="Deni Juli Setiawan"loading="lazy"  width="55" height="55"/>
 						<div>
 							<p class="font-bold text-lg">Thank you,</p>
 							<p class="mb-0">Iam Deni Juli Setiawan</p>
@@ -1092,7 +1093,7 @@
 				<div>
 					<p class="font-bold text-lg mb-2">Social Media</p>
 					<div class="flex items-center gap-4">
-						<a target="_blank" href="https://www.instagram.com/deni_jsa/" class="p-3 bg-white rounded-full">
+						<a target="_blank" href="https://www.instagram.com/deni_jsa/" class="p-3 bg-white rounded-full" aria-label="instagram deni juli setiawan">
 							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill="#0779E4"
@@ -1108,7 +1109,7 @@
 								/>
 							</svg>
 						</a>
-						<a target="_blank" href="https://www.facebook.com/people/Deni/100006678049034/" class="p-3 bg-white rounded-full">
+						<a target="_blank" href="https://www.facebook.com/people/Deni/100006678049034/" class="p-3 bg-white rounded-full" aria-label="facebook deni juli setiawan">
 							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill="#0779E4"
@@ -1116,7 +1117,7 @@
 								/>
 							</svg>
 						</a>
-						<a target="_blank" href="https://dribbble.com/DeniJSa" class="p-3 bg-white rounded-full">
+						<a target="_blank" href="https://dribbble.com/DeniJSa" class="p-3 bg-white rounded-full" aria-label="dribbble deni juli setiawan">
 							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill="#0779E4"
@@ -1125,7 +1126,7 @@
 								/>
 							</svg>
 						</a>
-						<a target="_blank" href="https://github.com/DeniJuly" class="p-3 bg-white rounded-full">
+						<a target="_blank" href="https://github.com/DeniJuly" class="p-3 bg-white rounded-full" aria-label="github deni juli setiawan">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill="#0779E4"
@@ -1133,7 +1134,7 @@
 								/>
 							</svg>
 						</a>
-						<a target="_blank" href="https://www.linkedin.com/in/deni-juli-setiawan-6b3088170/" class="p-3 bg-white rounded-full">
+						<a target="_blank" href="https://www.linkedin.com/in/deni-juli-setiawan-6b3088170/" class="p-3 bg-white rounded-full" aria-label="linkedin deni juli setiawan">
 							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path
 									fill="#0779E4"
