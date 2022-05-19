@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1088,9 +1088,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.dark .dark\:border-dark-black-light-2 {
+.dark .dark\:border-dark-black {
   --tw-border-opacity: 1;
-  border-color: rgb(115 119 124 / var(--tw-border-opacity));
+  border-color: rgb(34 40 49 / var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-dark-black {
