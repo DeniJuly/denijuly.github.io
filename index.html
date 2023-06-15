@@ -182,7 +182,7 @@
     <!-- Navbar -->
     <header class="fixed top-0 left-0 z-10 w-full bg-white dark:bg-dark-black">
       <div class="container mx-auto flex items-center justify-between py-3">
-        <a href="#">
+        <a href="#" class="flex gap-0 items-end">
           <img
             src="assets/logos/logo.webp"
             alt="logo deni juli setiawan"
@@ -263,6 +263,7 @@
             class="flex mt-3 justify-center items-center gap-3 lg:justify-start"
           >
             <a
+              id="btn-contact"
               class="bg-primary hover:opacity-80 transition-opacity flex gap-2 items-center rounded-md px-6 py-3 text-white font-medium text-sm"
               target="_blank"
               href="https://wa.me/+6285156636926"
@@ -294,6 +295,7 @@
           alt="Deni Juli Setiawan"
           title="Deni Juli Setiawan"
           class="absolute rounded-full border-[20px] border-white w-64 h-64 -top-40 aspect-square lg:translate-y-[52%] lg:right-5 lg:w-72 lg:h-72 dark:border-dark-black"
+          loading="lazy"
         />
       </div>
     </section>
@@ -1635,6 +1637,7 @@
             height="50"
             width="auto"
             class="h-14"
+            loading="lazy"
           />
         </div>
         <p class="mb-10 px-5 lg:px-12">
@@ -1654,6 +1657,7 @@
                 width="270"
                 height="auto"
                 class="shrink-0"
+                loading="lazy"
               />
             </div>
             <div class="snap-center shrink-0">
@@ -1663,6 +1667,7 @@
                 width="270"
                 height="auto"
                 class="shrink-0"
+                loading="lazy"
               />
             </div>
             <div class="snap-center shrink-0">
@@ -1672,6 +1677,7 @@
                 width="270"
                 height="auto"
                 class="shrink-0"
+                loading="lazy"
               />
             </div>
             <div class="snap-center shrink-0">
@@ -1681,6 +1687,7 @@
                 width="270"
                 height="auto"
                 class="shrink-0"
+                loading="lazy"
               />
             </div>
           </div>
@@ -2091,6 +2098,7 @@
         </p>
       </div>
     </footer>
+    <!-- <script src="/js/anime.min.js"></script> -->
     <script>
       const cekFirst = localStorage.getItem("theme");
       const prevElem = document.querySelectorAll(".nav-link");
