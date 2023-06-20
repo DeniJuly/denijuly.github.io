@@ -44,6 +44,24 @@
       linear-gradient(black, black);
     -webkit-mask-composite: xor;
   }
+  .btn-project {
+    @apply before:p-[1px] before:content-[''] before:absolute before:inset-0 relative before:rounded-md overflow-hidden transition-colors rounded-md duration-300;
+  }
+  .btn-project::before {
+    background: linear-gradient(
+        159deg,
+        #0779e4 -1.08%,
+        rgba(255, 255, 255, 0) 30.59%
+      ),
+      linear-gradient(340deg, #0779e4 -1.27%, rgba(255, 255, 255, 0) 31.06%);
+    -webkit-mask: linear-gradient(black, black) content-box content-box,
+      linear-gradient(black, black);
+    -webkit-mask-composite: xor;
+    transition: all 0.3s;
+  }
+  .btn-project:hover {
+    background: #0779e41c;
+  }
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
