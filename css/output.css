@@ -1126,12 +1126,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-28 {
   padding-top: 7rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1139,7 +1139,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-quicksand {
-  font-family: Quicksand;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .text-xl {

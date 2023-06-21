@@ -24,7 +24,7 @@ module.exports = {
           "linear-gradient(123.01deg, #0779E4 -1.08%, rgba(255, 255, 255, 0) 30.59%),linear-gradient(297.91deg, #0779E4 -2.83%, rgba(255, 255, 255, 0) 57.85%)",
       },
       fontFamily: {
-        quicksand: ["Quicksand"],
+        quicksand: ["'Quicksand', sans-serif"],
       },
       boxShadow: {
         "3xl": "0px 10px 30px rgba(0,0,0,0.03)",
