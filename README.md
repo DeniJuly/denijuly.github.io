@@ -21,4 +21,4 @@ you can check the website in here [denijuly.github.io](https://denijuly.github.i
 
 ## Tech Stack
 
-**Client:** HTML, TailwindCSS
+**Client:** HTML, JavaScript, TailwindCSS
