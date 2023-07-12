@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://denijuly.github.io/
+Sitemap: https://denijuly.github.io/sitemap.xml
