@@ -546,8 +546,22 @@
     @apply flex min-h-[470px] flex-col overflow-hidden rounded-[1.9rem];
   }
 
+  .project-card-button {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .project-card-button:focus-visible {
+    outline: 3px solid rgba(7, 121, 228, 0.28);
+    outline-offset: 4px;
+  }
+
   .project-visual {
-    @apply grid h-60 place-items-center p-6 text-center;
+    aspect-ratio: 4 / 3;
+    @apply relative grid place-items-stretch overflow-hidden p-0 text-center;
   }
 
   .project-visual span {
@@ -556,6 +570,14 @@
 
   .project-visual small {
     @apply mt-3 block text-xs font-bold uppercase tracking-[0.28em] opacity-80;
+  }
+
+  .project-thumbnail {
+    @apply h-full w-full object-cover object-center transition duration-300;
+  }
+
+  .project-card-button:hover .project-thumbnail {
+    transform: scale(1.03);
   }
 
   .project-body {
@@ -588,6 +610,12 @@
     color: #ffffff;
   }
 
+  .project-card-link {
+    background: var(--surface-contrast);
+    color: var(--surface-strong);
+    @apply inline-flex w-fit rounded-full px-5 py-2.5 text-sm font-bold;
+  }
+
   .project-panel-a {
     background: linear-gradient(180deg, rgba(210, 236, 255, 0.9), rgba(239, 248, 255, 0.94));
     color: #195896;
@@ -600,6 +628,72 @@
 
   .project-panel-c {
     background: linear-gradient(180deg, rgba(226, 240, 255, 0.92), rgba(247, 251, 255, 0.96));
+  }
+
+  .project-modal {
+    background: rgba(8, 15, 30, 0.62);
+    @apply fixed inset-0 z-[70] hidden items-center justify-center px-4 py-6 backdrop-blur-sm;
+  }
+
+  .project-modal.is-open {
+    @apply flex;
+  }
+
+  .project-modal__backdrop {
+    @apply absolute inset-0;
+  }
+
+  .project-modal__dialog {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    @apply relative z-10 flex h-[92vh] w-full max-w-[96vw] overflow-hidden rounded-none p-0;
+  }
+
+  .project-modal__close,
+  .project-modal__arrow {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid var(--border);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    @apply grid h-10 w-10 shrink-0 place-items-center rounded-full text-xl font-bold transition;
+  }
+
+  .project-modal__close--floating {
+    @apply absolute right-4 top-4 z-20;
+  }
+
+  .project-modal__viewer {
+    @apply relative flex min-h-0 flex-1 items-center justify-center;
+  }
+
+  .project-modal__figure {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    @apply flex h-full w-full items-center justify-center overflow-hidden rounded-none;
+  }
+
+  .project-modal__figure img {
+    @apply h-full w-full object-contain;
+    max-height: 100%;
+  }
+
+  .project-modal__figure figcaption {
+    color: #ffffff;
+    @apply absolute bottom-4 left-4 rounded-full bg-[rgba(0,0,0,0.42)] px-3 py-1 text-xs font-semibold backdrop-blur-md;
+  }
+
+  .project-modal__arrow {
+    @apply absolute top-1/2 z-20 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full text-2xl font-bold transition;
+  }
+
+  .project-modal__arrow--left {
+    @apply left-4;
+  }
+
+  .project-modal__arrow--right {
+    @apply right-4;
   }
 
   .contact-panel {

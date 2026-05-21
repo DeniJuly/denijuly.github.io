@@ -510,84 +510,84 @@
               and experiences I’ve been building lately.
             </p>
             <div class="project-layout mt-10">
-              <article class="project-card">
-                <div class="project-visual project-panel-a">
-                  <div>
-                    <span>Alif Iqra</span>
-                    <small>Registration - Student Data</small>
-                  </div>
+              <button
+                type="button"
+                class="project-card project-card-button"
+                data-project="alif-iqra"
+                aria-label="Open Alif Iqra project showcase"
+              >
+                <div class="project-visual project-panel-a overflow-hidden">
+                  <img
+                    src="assets/images/projects/alif-thumb.png"
+                    alt="Alif Iqra registration dashboard"
+                    class="project-thumbnail"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="project-body">
                   <div>
                     <p class="project-kicker">Web Application</p>
                     <h3>Alif Iqra</h3>
                     <p>
-                      Website for private Quranic recitation registration and
-                      student data management for the Alif Iqra company.
+                      Registration and student management experience for the
+                      Alif Iqra platform.
                     </p>
                   </div>
-                  <a
-                    href="https://apps.alifiqra.id/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Visit project</a
-                  >
+                  <span class="project-card-link">Open showcase</span>
                 </div>
-              </article>
-              <article class="project-card">
-                <div class="project-visual project-panel-b">
-                  <div>
-                    <span>PISS PSI</span>
-                    <small>Finance - Organization</small>
-                  </div>
-                </div>
-                <div class="project-body">
-                  <div>
-                    <p class="project-kicker">Finance Platform</p>
-                    <h3>PISS PSI</h3>
-                    <p>
-                      Website for managing finance workflows for the PSI
-                      organization, focused on operational clarity and
-                      structured records.
-                    </p>
-                  </div>
-                  <a
-                    href="https://piss.psi.id/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Visit project</a
-                  >
-                </div>
-              </article>
-              <article class="project-card">
-                <div class="project-visual project-panel-c overflow-hidden">
+              </button>
+              <button
+                type="button"
+                class="project-card project-card-button"
+                data-project="banpol"
+                aria-label="Open Banpol project showcase"
+              >
+                <div class="project-visual project-panel-b overflow-hidden">
                   <img
-                    src="assets/images/alandesa/1.webp"
-                    alt="Alan Desa mobile app screen"
-                    width="270"
-                    height="495"
-                    class="mx-auto h-48 w-auto object-contain"
+                    src="assets/images/projects/banpol-thumb.png"
+                    alt="Banpol dashboard overview"
+                    class="project-thumbnail"
                     loading="lazy"
                   />
                 </div>
                 <div class="project-body">
                   <div>
-                    <p class="project-kicker">Mobile Application</p>
-                    <h3>Alan Desa</h3>
+                    <p class="project-kicker">Government Platform</p>
+                    <h3>Banpol</h3>
                     <p>
-                      Smart mobile solution that helps village officials work
-                      effectively and efficiently without being limited by time
-                      or place.
+                      National banpol administration dashboard with progress and
+                      workflow views.
                     </p>
                   </div>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.alandesa&hl=en-ID"
-                    target="_blank"
-                    rel="noreferrer"
-                    >View app</a
-                  >
+                  <span class="project-card-link">Open showcase</span>
                 </div>
-              </article>
+              </button>
+              <button
+                type="button"
+                class="project-card project-card-button"
+                data-project="iuran-kompensasi"
+                aria-label="Open Iuran and Kompensasi project showcase"
+              >
+                <div class="project-visual project-panel-c overflow-hidden">
+                  <img
+                    src="assets/images/projects/iuran-thumb.png"
+                    alt="Iuran and kompensasi dashboard overview"
+                    class="project-thumbnail"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="project-body">
+                  <div>
+                    <p class="project-kicker">Finance Platform</p>
+                    <h3>Iuran &amp; Kompensasi</h3>
+                    <p>
+                      Finance tracking for iuran and compensation workflows with
+                      detailed operational reporting.
+                    </p>
+                  </div>
+                  <span class="project-card-link">Open showcase</span>
+                </div>
+              </button>
             </div>
           </div>
         </section>
@@ -668,6 +668,47 @@
       </nav>
     </div>
 
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="project-modal__backdrop" data-modal-close></div>
+      <div
+        class="project-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Project showcase"
+      >
+        <div class="project-modal__viewer">
+          <button
+            class="project-modal__arrow project-modal__arrow--left"
+            type="button"
+            aria-label="Previous image"
+            id="project-modal-prev"
+          >
+            &larr;
+          </button>
+          <figure class="project-modal__figure">
+            <img id="project-modal-image" alt="" />
+            <figcaption id="project-modal-caption"></figcaption>
+          </figure>
+          <button
+            class="project-modal__arrow project-modal__arrow--right"
+            type="button"
+            aria-label="Next image"
+            id="project-modal-next"
+          >
+            &rarr;
+          </button>
+          <button
+            class="project-modal__close project-modal__close--floating"
+            type="button"
+            aria-label="Close project showcase"
+            data-modal-close
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script>
       const savedTheme = localStorage.getItem("theme");
       const html = document.documentElement;
@@ -738,6 +779,109 @@
 
         revealTargets.forEach((target) => revealObserver.observe(target));
       }
+
+      const projectData = {
+        "alif-iqra": {
+          eyebrow: "Alif Iqra",
+          title: "Alif Iqra",
+          copy: "Registration and student management screens for the Alif Iqra application.",
+          images: [
+            { src: "assets/images/projects/alif-1.png", alt: "Alif Iqra registration dashboard" },
+            { src: "assets/images/projects/alif-2.png", alt: "Alif Iqra registration detail screen" },
+            { src: "assets/images/projects/alif-3.png", alt: "Alif Iqra dashboard overview" },
+          ],
+        },
+        banpol: {
+          eyebrow: "Banpol",
+          title: "Banpol",
+          copy: "Operational dashboards and workflow screens for the Banpol administration system.",
+          images: [
+            { src: "assets/images/projects/banpol-1.png", alt: "Banpol dashboard overview" },
+            { src: "assets/images/projects/banpol-2.png", alt: "Banpol workflow table screen" },
+            { src: "assets/images/projects/banpol-3.png", alt: "Banpol province detail modal" },
+          ],
+        },
+        "iuran-kompensasi": {
+          eyebrow: "Iuran & Kompensasi",
+          title: "Iuran & Kompensasi",
+          copy: "Financial tracking views for iuran and compensation reporting across multiple work states.",
+          images: [
+            { src: "assets/images/projects/iuran-kompensasi-1.png", alt: "Iuran dashboard summary" },
+            { src: "assets/images/projects/iuran-kompensasi-2.png", alt: "Iuran table view" },
+            { src: "assets/images/projects/iuran-kompensasi-3.png", alt: "Kompensasi data table view" },
+          ],
+        },
+      };
+
+      const modal = document.querySelector("#project-modal");
+      const modalImage = document.querySelector("#project-modal-image");
+      const modalCaption = document.querySelector("#project-modal-caption");
+      const modalPrev = document.querySelector("#project-modal-prev");
+      const modalNext = document.querySelector("#project-modal-next");
+      const projectCards = [...document.querySelectorAll("[data-project]")];
+
+      let activeProjectId = null;
+      let activeImageIndex = 0;
+
+      function renderProjectModal() {
+        const project = projectData[activeProjectId];
+        if (!project) return;
+
+        const image = project.images[activeImageIndex];
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        modalCaption.textContent = `${activeImageIndex + 1} of ${project.images.length}`;
+      }
+
+      function openProjectModal(projectId) {
+        activeProjectId = projectId;
+        activeImageIndex = 0;
+        renderProjectModal();
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeProjectModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      function stepProjectImage(direction) {
+        const project = projectData[activeProjectId];
+        if (!project) return;
+        activeImageIndex =
+          (activeImageIndex + direction + project.images.length) %
+          project.images.length;
+        renderProjectModal();
+      }
+
+      projectCards.forEach((card) => {
+        const projectId = card.dataset.project;
+        card.addEventListener("click", () => openProjectModal(projectId));
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openProjectModal(projectId);
+          }
+        });
+      });
+
+      modal.addEventListener("click", (event) => {
+        const closeTarget = event.target.closest("[data-modal-close]");
+        if (closeTarget) closeProjectModal();
+      });
+
+      modalPrev.addEventListener("click", () => stepProjectImage(-1));
+      modalNext.addEventListener("click", () => stepProjectImage(1));
+
+      window.addEventListener("keydown", (event) => {
+        if (!modal.classList.contains("is-open")) return;
+        if (event.key === "Escape") closeProjectModal();
+        if (event.key === "ArrowLeft") stepProjectImage(-1);
+        if (event.key === "ArrowRight") stepProjectImage(1);
+      });
     </script>
   </body>
 </html>
