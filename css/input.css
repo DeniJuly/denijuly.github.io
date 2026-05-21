@@ -727,7 +727,17 @@
   }
 
   .dark .mobile-dock {
-    background: rgba(255, 250, 240, 0.82);
+    background: rgba(10, 18, 34, 0.94);
+    border-color: rgba(124, 194, 255, 0.22);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+  }
+
+  .dark .mobile-link {
+    color: var(--accent);
+  }
+
+  .dark .mobile-link:hover {
+    color: #ffffff;
   }
 
   .profile-panel .brand-heading,
